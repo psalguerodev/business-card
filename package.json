@@ -1,0 +1,33 @@
+{
+  "name": "psalguerodev",
+  "version": "0.0.6",
+  "description": "Patrick Salguero Profile",
+  "main": "/bin/card.js",
+  "private": false,
+  "bin": {
+    "psalguerodev": "./bin/card.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "publish": "npm publish --access=public"
+  },
+  "keywords": [
+    "profile",
+    "psalguerodev"
+  ],
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "author": "psalguerodev <patrick.salguero.avalos@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  }
+}
